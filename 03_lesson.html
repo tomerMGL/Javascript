@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+//------------------insert numbers from the users and print in to the console--------------------------//
+var arrnum = [];
+var i=0;
+var numm = 6;
+        while(i<=5){
+            arrnum[i] = Number(prompt("Enter a "+numm+" numbers to the array"));
+            i++;
+            numm--;
+        }
+
+        for(var index = 0 ;index<=5;index++)
+            {
+                console.log("cell : "+index+" = "+arrnum[index]);
+            }
+
+//-------------------sort the array and print to the console the biggest and smallest numebrs-------------------------//
+
+            var temp;
+        for(var sort =5 ; sort>=0;sort--)
+        {
+            for(var index = 0 ;index<sort;index++)
+            {
+                if(arrnum[index]>arrnum[index+1])
+                {
+                  temp = arrnum[index];
+                    arrnum[index] = arrnum[index+1];
+                    arrnum[index+1] = temp;
+                } 
+   
+            }
+
+        }
+
+console.log("The biggest is : "+arrnum[5]);
+console.log("The smallest is : "+arrnum[0]);
+//---------------------sum of all cells-----------------------//
+var sum =0;
+            for(var index = 0 ;index<=5;index++)
+            {
+            sum += arrnum[index];
+            }
+            console.log(`The sum is : ${sum}`);
+
+for(var index = 0 ;index<=5;index++)
+            {
+                console.log("cell : "+index+" = "+arrnum[index]);
+            }
+        
+//----------------------separate the even and odd numbers--------------------------------------//
+var odd = [];
+var even = [];
+var cellOdd =0,cellEven =0;
+
+for(var index = 0 ;index<=5;index++)
+{
+    if(arrnum[index]%2==0)
+    {
+        even[cellEven] = arrnum[index]
+        cellEven++;
+    }
+
+    else
+    {
+        odd[cellOdd] = arrnum[index];
+        cellOdd++;
+    }
+}
+for (var i=0 ; i <= odd.length-1;i++)
+    console.log("Array of odd : "+odd[i]);
+    for (var i=0 ; i <= even.length-1;i++)
+    console.log("Array of even : "+even[i]);
+
+//---------------------------second largest number-------------------------------------------------------//
+
+console.log("second largest : "+arrnum[4]); // i sort the array before so...
+
+//-------------------------------------------------------------------------------//
+
+var matrix = [
+    [true,true],
+    [true,false],
+    [false,true],
+    [false,false]
+    ]
+    for(row in matrix){
+    console.log(matrix[row][0]+" and "+matrix[row][1]);
+    console.log(matrix[row][0]&matrix[row][1]);
+    console.log(matrix[row][0]+" or "+matrix[row][1]);
+    console.log(matrix[row][0]|matrix[row][1]);
+    console.log(matrix[row][0]+" xor "+matrix[row][1]);
+    console.log(matrix[row][0]^matrix[row][1]);
+    console.log("-------------------------------------------");
+    }
+    </script>
+    
+</body>
+</html>
