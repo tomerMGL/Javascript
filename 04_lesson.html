@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+<h3>Convert coins</h3>
+<button onclick="shekelToDollar()">shekel to dollar</button><br><br>
+<button onclick="dolarToShekel()">dollar to shekel</button><br><br>
+<button onclick="shekelToEuro()">shekel to euro</button><br><br>
+<button onclick="euroToShekel()">euro to shekel</button>
+</center>
+<script>
+
+//----------------------------------Q1----------------------------------------//
+/*
+var number =  prompt("Enter number for reverse : ");
+
+
+number =  reverse_number(number);
+    console.log(`${number}`);
+    alert(`your new number is : ${number}`);
+
+
+
+
+
+
+
+
+    function reverse_number(num){
+        var new_number = ""; 
+        while(num>1){
+            new_number += parseInt(num)%10;
+            num  =  parseInt(num)/10;
+        }
+      
+        return new_number;
+    } 
+
+*/
+
+
+//----------------------------------Q2----------------------------------------//
+/*
+var flag;
+var Pnum = prompt("Enter number for check if the number is prime or not : ");
+for(i=2;i<Pnum/2;i++){
+if(Pnum%i==0)
+    flag = true;
+}
+    if(flag)
+        alert("your number is not a prime number");
+    
+    else
+        alert("your number is a prime number")
+    */
+//----------------------------------Q3----------------------------------------//
+
+/*
+
+console.log(check(12));
+console.log(check("tomer"));
+console.log(check(true));
+console.log(check(undefined));
+console.log(check([15,44]));
+console.log(check(function1));
+
+function function1(){
+
+}
+
+function check(condition){
+
+    return typeof(condition);
+
+}
+*/
+//----------------------------------Q4----------------------------------------//
+// hello raya//
+//open in browser and check the options//
+
+
+function dolarToShekel() {
+var number = prompt("Enter a sum for convert from dollar to shekel : ");
+alert(number*3.59021308+"₪");
+}
+
+function shekelToDollar() {
+var number = prompt("Enter a sum for convert from shekel to dollar : ");
+alert(number/3.59021308+"$");
+}
+
+function euroToShekel() {
+var number = prompt("Enter a sum for convert from euro to shekel : ");
+alert(number*3.90435313+"₪");
+}
+
+function shekelToEuro() {
+var number = prompt("Enter a sum for convert from shekel to euro : ");
+alert(number/3.90435313+ "€");
+}
+
+
+
+</script>
+
+</body>
+</html>
