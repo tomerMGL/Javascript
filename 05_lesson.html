@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<textarea  cols="30" rows="10"></textarea>
+    <script>
+ //-----------------------------------------Q1--------------------------------------------------------//  
+       /*
+        var counter = prompt("Enter a number for counter : ");
+        var sec = Number(prompt("Enter a number for sec : "));
+        var secFromUser = sec;
+        for (var i=1 ;i<=counter ;i++){
+            
+            setTimeout(function(){console.log(Math.floor( Math.random()*11))},sec*1000);
+            sec += secFromUser;
+      
+        }
+        */
+//-------------------------------------------------------------------------------------------------//    
+
+
+//----------------------------------------Q2---------------------------------------------------------//  
+
+var names = [ "     _____         _____" , "    |  O  |       |  O  |" , 
+"    |_____|       |_____|" , "" , "  -                       -" , "   -                     -" , "     -                 -" , "       -             -" ,  
+"         ----------" , "    happy Independence Day"  , "tomer" , "raya" , "koko" , "mitzi" , "add how much u want" , "ok?" , "ok"  ] ;
+var index=0;
+var time = 0;
+for(var i=0; i < names.length ; i++){
+    
+    setTimeout(function(){console.log(names[i++-names.length])} , time+=400);
+    
+}
+
+
+//-------------------------------------------------------------------------------------------------//  
+
+//----------------------------------------Q3---------------------------------------------------------//
+/*
+do{
+   
+        var number = Number(prompt("Enter a number for check sqrt : "));
+            if (number<0){
+                alert("cant check negative number!!!")
+                continue;
+            }
+        
+}while(number<0)
+alert("sqrt is : "+Math.sqrt(number));
+*/
+//-------------------------------------------------------------------------------------------------//
+
+
+
+//----------------------------------------Q4---------------------------------------------------------//
+/*
+var num1 = prompt("Enter number : ");
+var num2 = Number(prompt("Enter a number for power of "+num1+" : "))
+
+alert("your answer is :"+power(num1 , num2))
+
+function power( num , num1){
+    return Math.pow(num , num1);
+}
+*/
+//-------------------------------------------------------------------------------------------------//
+
+
+//-------------------------------------------------------------------------------------------------//
+/*
+var titanium = `Lyrics
+You shout it out
+But I can't hear a word you say
+I'm talking loud not saying much
+I'm criticized but all your bullets ricochet
+You shoot me down, but I get up
+I'm bulletproof nothing to lose
+Fire away, fire away
+Ricochet, you take your aim
+Fire away, fire away
+You shoot me down but I won't fall, I am titanium
+You shoot me down but I won't fall
+I am titanium, I am titanium, I am titanium, I am titanium
+Cut me down
+But it's you who has further to fall
+Ghost town, haunted love
+Raise your voice, sticks and stones may break my bones
+I'm talking loud not saying much
+I'm bulletproof nothing to lose
+Fire away, fire away
+Ricochet, you take your aim
+Fire away, fire away
+You shoot me down but I won't fall
+I am titanium
+You shoot me down but I won't fall
+I am titanium, I am titanium
+Stone-hard, machine gun
+Firing at the ones who run
+Stone-hard, thus bulletproof glass
+You shoot me down but I won't fall, I am titanium
+You shoot me down but I won't fall, I am titanium
+You shoot me down but I won't fall, I am titanium
+You shoot me down but I won't fall, I am titanium
+I am titanium`;
+var ShineOn = `
+Remember when you were young, you shone like the sun
+Shine on you crazy diamond
+Now there's a look in your eyes, like black holes in the sky
+Shine on you crazy diamond
+You were caught on the crossfire of childhood and stardom
+Blown on the steel breeze
+Come on you target for faraway laughter
+Come on you stranger, you legend, you martyr, and shine
+You reached for the secret too soon, you cried for the moon
+Shine on you crazy diamond
+Threatened by shadows at night, and exposed in the light
+Shine on you crazy diamond
+Well you wore out your welcome with random precision
+Rode on the steel breeze
+Come on you raver, you seer of visions
+Come on you painter, you piper, you prisoner, and shine`;
+
+var song;
+var choose = Number(prompt("Enter song for check a word : \n 1. titanium \n 2.shine on"));
+switch(choose){
+    case 1 : song = titanium;break;
+    case 2 : song = ShineOn;break;
+    default : alert('Wrong option!');break;
+}
+var word = prompt("Enter a word for check in your song : ");
+
+
+    checksong(song , word);
+
+
+
+function checksong(song , word){
+song = song.toLowerCase();
+word = word.toLowerCase();
+var index = word.length;
+var foundIndex = song.indexOf(word);
+
+
+if(song.slice(foundIndex,foundIndex+index)==word){
+    console.log("founded");
+    alert("The word is founded");
+}
+    
+    else    {
+        console.log("not founded");
+        alert("The word is not founded");
+    }
+      
+}
+*/
+//-------------------------------------------------------------------------------------------------//
+    </script>
+    
+</body>
+</html>
